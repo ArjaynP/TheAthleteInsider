@@ -1,0 +1,277 @@
+/* fonts */
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Anton/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(fonts/Avenir/AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url(fonts/Impact-Font/impact.ttf);
+}
+
+@font-face {
+    font-family: myFont4;
+    src: url(fonts/font/DINNeuzeitGroteskLT-BoldCond.ttf);
+}
+
+
+h1 {
+    font-family: myFont;
+    font-size: 150px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 2%;
+    
+}
+
+h4 {
+    font-family: myFont;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+p {
+    font-family: myFont;
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h3 {
+    font-family: myFont3;
+    font-size: 50px;
+    color: whitesmoke;
+    position: absolute;
+    top: 67%;
+    margin-left: 14%;
+    transform: scale(1,1.8);
+    width: 80%;
+    display: flex;
+}
+
+
+
+/* front cover */
+body {
+    background-color: #121212;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s ease;
+    padding: 30px 100px;
+    z-index: 100000;
+    text-decoration: none;
+    background-color: black;
+}
+
+header a {
+    margin-left: 8%;
+}
+
+header.sticky {
+    padding: 35px 100px;
+    z-index: 100000;
+}
+
+header .brandname {
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 32px;
+    transition: 0.3s ease;
+    font-family: myFont;
+}
+
+header.sticky .brandname:hover {
+    color: #808080;
+}
+
+header ul#nav-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: myFont;
+    padding-right: 120px;
+}
+
+header ul#nav-links li {
+    position: relative;
+    list-style: none;
+}
+
+header ul#nav-links li a {
+    position: relative;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.6s ease;
+}
+
+header ul#nav-links li a:before{
+    content: '';
+    position: absolute;
+    background: whitesmoke;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header ul#nav-links li a:hover:before{
+    width: 100%;
+    background: #808080;
+}
+
+header ul#nav-links li a:hover::before {
+    width: 100%;
+}
+
+header ul#nav-links li a:hover {
+    color: #808080;
+}
+
+
+
+/* games */
+.games {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    overflow: auto;
+}
+
+.gamebox {
+    background-color: black; 
+    width: 200px; 
+    height: 200px; 
+    display: inline-block; 
+    margin-right: 3%;
+}
+
+
+
+/* headlines */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rectangle {
+    width: 33px;
+    height: 100px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.carousel-caption {
+    display: flex;
+    top: 8%;
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    overflow: hidden;
+    margin-left: -20%;
+}
+
+
+
+/* team stats power rankings */
+.powerankings {
+    width: 70%;
+    height: 600px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid whitesmoke;
+}
+.teamstats {
+    width: 130%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #090909;
+    font-family: myFont2;
+    font-size: 16px;
+    font-weight: 100;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.teamstats thead {
+    font-family: myFont4;
+    color: whitesmoke;
+    padding: 50px;
+    font-size: 24px;
+	background-color: #303030;
+}
+
+.teamstats tr {
+    border-bottom: 10px solid transparent;
+}
+
+.teamstats th {
+	cursor: pointer;
+}
+
+.teamstats .th-sort-asc::after {
+	content: "\25b4";
+}
+
+.teamstats .th-sort-desc::after {
+	content: "\25be";
+}
+
+.teamstats .th-sort-asc::after, .table-sortable .th-sort-desc::after {
+	margin-left: 5px;
+}
+
+.teamstats .th-sort-asc, .teamstats .th-sort-desc {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+
+/* stats leaders */
+.ppg {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: rgba(54, 162, 235, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .ppgleaders {
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+}
