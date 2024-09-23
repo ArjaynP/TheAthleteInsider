@@ -1,3 +1,5 @@
+# The Athlete Insider
+
 The Athlete Insider is an all-in-one daily sports news website that I created myself. It delivers the latest coverage and detailed analysis on major sports storylines from the NBA, NFL, UEFA Champions League, 
 and for a limited time the Paris 2024 Olympics. For each league, I also included game breakdown analysis, player statistics, standings, and betting odds. To create this website, I used HTML, CSS, JavaScript, 
 JQuery, and an API implementation from Rapid API to display the NBA conference standings. I called this API using Javascript as well, and fetch as the client.
